@@ -1,9 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var audio = document.getElementById('backgroundMusic');
+    var iframeAudio = document.getElementById('iframeAudio');
   
-    // Play audio automatically when the DOM is fully loaded
-    audio.play();
+    // Function to restart the audio when it ends
+    function restartAudio() {
+      iframeAudio.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+    }
   
-    // You can add more functionality or event listeners if needed
+    // Event listener to restart the audio when it ends
+    iframeAudio.addEventListener('ended', function () {
+      restartAudio();
+    });
+  
+    // Initial play to start the loop
+    restartAudio();
   });
   
