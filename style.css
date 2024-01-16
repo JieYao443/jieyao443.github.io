@@ -37,6 +37,11 @@ body {
   top: 20vh;
 }
 
+#greetingText {
+  display: block;
+  color: black; /* 或者其他你想要的颜色 */
+}
+
 .one {
   font-size: 4.5rem;
 }
