@@ -5,6 +5,8 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  background: url('img/9173391_4097436.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
@@ -97,7 +99,7 @@ body {
   right: 0;
 }
 
-.idea-3 strong {
+.idea-4 strong {
   padding: 3px 5px;
   border-radius: 3px;
   display: inline-block;
