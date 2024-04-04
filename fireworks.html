@@ -1,8 +1,17 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-12-21 09:07:44
+ * @LastEditTime: 2021-10-13 11:01:00
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \firework-master\酷炫表白烟花\fire.html
+-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <script
       id="jqbb"
       src="https://libs.baidu.com/jquery/1.11.1/jquery.min.js"
@@ -72,18 +81,43 @@
     <div style="display: none">
       <div class="shape">生日快乐呀🎂</div>
       <div class="shape"><img src="./assets/img/02.png" alt="" /></div>
-      <div class="shape">🏮小屁孩/div>
+      <div class="shape">🙈小屁孩/div>
       <div class="shape"><img src="./assets/img/01.png" alt="" /></div>
-      <div class="shape">🏮白白胖胖</div>
+      <div class="shape">🐖白白胖胖</div>
       <div class="shape"><img src="./assets/img/01.png" alt="" /></div>
-      <div class="shape">🏮傻里傻气</div>
+      <div class="shape">💘傻里傻气</div>
       <div class="shape">💘💘💘</div>
       <div class="shape"><img src="./assets/img/02.png" alt="" /></div>
-      <div class="shape">🏮蠢萌可爱</div>
+      <div class="shape">💘蠢萌可爱</div>
       <div class="shape"><img src="./assets/img/02.png" alt="" /></div>
     </div>
     <!--音乐部分/可替换-->
-    <audio src="./music/3.mp3" autoplay="true" loop="true"></audio>
+    <audio id="music" loop>
+      <source src="./music/3.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <iframe
+      id="iframMusic"
+      allow="autoplay"
+      style="display: none"
+      src="./music/3.mp3"
+    ></iframe>
+
+    <script>
+      document.addEventListener('click', function() {
+          var audio = document.getElementById('music');
+      
+          // 播放音乐
+          function playMusic() {
+              audio.play().catch(function(error) {
+                  console.error('自动播放音乐失败:', error);
+              });
+          }
+      
+          // 当用户点击页面任意地方时播放音乐
+          playMusic();
+      });
+      </script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/fire.js"></script>
     <script src="./js/talk.js"></script>
