@@ -60,7 +60,7 @@ body :-ms-input-placeholder {
 .particle_star {
   width: 4px;
   height: 4px;
-  position: absolute;
+  position:absolute;
   background-color: #ffffff;
   box-shadow: 0px 0px 17px 4px wheat;
   border-radius: 50%;
@@ -71,8 +71,8 @@ body :-ms-input-placeholder {
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
-  margin-top: 7%;
-  padding: 80px 0;
+  margin-top: 15%;
+  padding: 0;
   height: 100vh;
   width: 100vw;
   height: 400px;

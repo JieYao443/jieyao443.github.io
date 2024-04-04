@@ -1,4 +1,4 @@
-var star_num = 75;
+var star_num = 100;
 var $container = $(".container");
 var $containerWidth = $container.width();
 var $containerHeight = $container.height();
